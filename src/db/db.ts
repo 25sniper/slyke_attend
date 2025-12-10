@@ -43,6 +43,8 @@ export const addSubject = async (subject: Subject) => {
     return db.put('subjects', subject);
 };
 
+export const updateSubject = addSubject;
+
 
 
 export const getAllSubjects = async () => {

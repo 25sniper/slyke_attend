@@ -1,68 +1,65 @@
-
 import { useState } from 'react';
-import { Trash2, CheckCircle, AlertTriangle } from 'lucide-react';
+import { Trash2 } from 'lucide-react';
 import { clearData } from '../db/db';
+import ConfirmationModal from '../components/ConfirmationModal';
 
 export default function Settings() {
-    const [message, setMessage] = useState<string | null>(null);
+    const [resetModal, setResetModal] = useState(false);
 
-    const handleReset = async () => {
-        if (confirm('ARE YOU SURE? This will delete ALL data permanently.')) {
+    const handleClearData = async () => {
+        try {
             await clearData();
-            showMessage('All data cleared.');
+            alert('All data cleared successfully');
+            window.location.reload();
+        } catch (error) {
+            console.error(error);
+            alert('Failed to clear data');
         }
-    };
-
-    const showMessage = (msg: string) => {
-        setMessage(msg);
-        setTimeout(() => setMessage(null), 3000);
     };
 
     return (
         <div>
-            <h2 style={{ marginBottom: 'var(--spacing-md)' }}>Settings</h2>
+            <h2 style={{ marginBottom: 'var(--spacing-lg)' }}>Settings</h2>
 
-            {message && (
-                <div style={{
-                    marginBottom: 'var(--spacing-md)',
-                    padding: 'var(--spacing-md)',
-                    backgroundColor: '#ECFDF5',
-                    color: '#047857',
-                    borderRadius: 'var(--radius-md)',
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '8px'
-                }}>
-                    <CheckCircle size={20} /> {message}
-                </div>
-            )}
-
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-md)' }}>
-
-                {/* Danger Zone */}
-                <section className="card" style={{ borderColor: 'var(--color-danger)' }}>
-                    <h3 style={{ marginBottom: 'var(--spacing-md)', fontSize: '1.1em', color: 'var(--color-danger)', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                        <AlertTriangle size={20} /> Danger Zone
-                    </h3>
-
-                    <button onClick={handleReset} className="btn" style={{
-                        backgroundColor: '#FEF2F2',
-                        color: '#DC2626',
-                        justifyContent: 'flex-start',
-                        gap: '12px',
-                        width: '100%'
-                    }}>
-                        <Trash2 size={20} /> Reset All Data
-                    </button>
-                </section>
-
-                {/* About */}
-                <div style={{ marginTop: 'var(--spacing-xl)', textAlign: 'center', color: 'var(--color-text-muted)', fontSize: '0.9em' }}>
-                    <p>Slyke-Attend Offline Edition</p>
-                    <p>v1.0.0</p>
-                </div>
-
+            {/* Application Info */}
+            <div className="card" style={{ marginBottom: 'var(--spacing-lg)' }}>
+                <h3>About</h3>
+                <p>Slyke Attend v1.2</p>
+                <p style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>
+                    A simple offline-first attendance tracker.
+                </p>
             </div>
+
+            {/* Danger Zone */}
+            <div className="card" style={{ border: '1px solid #FECACA' }}>
+                <h3 style={{ color: '#DC2626', marginBottom: 'var(--spacing-md)' }}>Danger Zone</h3>
+                <p style={{ marginBottom: 'var(--spacing-md)', fontSize: '0.9rem' }}>
+                    These actions are destructive and cannot be undone.
+                </p>
+
+                <button
+                    onClick={() => setResetModal(true)}
+                    className="btn"
+                    style={{
+                        backgroundColor: '#DC2626',
+                        color: 'white',
+                        width: '100%',
+                        justifyContent: 'center'
+                    }}
+                >
+                    <Trash2 size={18} /> Reset All Data
+                </button>
+            </div>
+
+            <ConfirmationModal
+                isOpen={resetModal}
+                onClose={() => setResetModal(false)}
+                onConfirm={handleClearData}
+                title="Reset All Data"
+                message="Are you sure you want to delete ALL subjects and attendance entries? This action is irreversible and will wipe your entire database."
+                confirmText="Reset Everything"
+                isDanger={true}
+            />
         </div>
     );
 }
