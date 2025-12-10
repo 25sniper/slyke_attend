@@ -25,6 +25,17 @@ export default function SubjectCard({ subject, stats }: SubjectCardProps) {
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '4px' }}>
                     <div style={{
+                        backgroundColor: '#DCFCE7', // Greenish for current
+                        color: '#166534',
+                        padding: '2px 6px',
+                        borderRadius: 'var(--radius-sm)',
+                        fontWeight: 'bold',
+                        fontSize: '0.8rem',
+                        whiteSpace: 'nowrap'
+                    }}>
+                        Cur: {stats.currentPercentage}%
+                    </div>
+                    <div style={{
                         backgroundColor: isDanger ? '#FEE2E2' : '#EFF6FF',
                         color: isDanger ? '#DC2626' : '#2563EB',
                         padding: '2px 6px',
@@ -33,7 +44,7 @@ export default function SubjectCard({ subject, stats }: SubjectCardProps) {
                         fontSize: '0.8rem',
                         whiteSpace: 'nowrap'
                     }}>
-                        {stats.percentage}%
+                        Rem: {stats.percentage}%
                     </div>
                 </div>
             </div>

@@ -81,12 +81,26 @@ export default function SubjectDetail() {
             </div>
 
             {/* Stats Cards */}
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: 'var(--spacing-md)', marginBottom: 'var(--spacing-lg)' }}>
-                <div className="card" style={{ textAlign: 'center', backgroundColor: stats.percentage < 75 ? '#FEE2E2' : '#EFF6FF' }}>
-                    <div style={{ fontSize: '2em', fontWeight: 'bold', color: stats.percentage < 75 ? '#DC2626' : '#2563EB' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'var(--spacing-md)', marginBottom: 'var(--spacing-lg)' }}>
+                <div className="card" style={{ textAlign: 'center', backgroundColor: '#ECFDF5' }}>
+                    <div style={{ fontSize: '2em', fontWeight: 'bold', color: '#059669' }}>
+                        {stats.currentPercentage}%
+                    </div>
+                    <div style={{ fontSize: '0.9em', color: '#047857' }}>Current %</div>
+                </div>
+                <div className="card" style={{ textAlign: 'center' }}>
+                    <div style={{ fontSize: '2em', fontWeight: 'bold', color: 'var(--color-primary)' }}>
                         {stats.percentage}%
                     </div>
-                    <div style={{ fontSize: '0.9em', color: stats.percentage < 75 ? '#B91C1C' : '#1D4ED8' }}>Attendance</div>
+                    <div style={{ fontSize: '0.9em', color: 'var(--color-text-muted)' }}>Remaining %</div>
+                </div>
+                <div className="card" style={{ textAlign: 'center', gridColumn: 'span 2' }}>
+                    <div style={{ fontSize: '2em', fontWeight: 'bold' }}>
+                        {stats.canMissHours}h
+                    </div>
+                    <div style={{ fontSize: '0.9em', color: 'var(--color-text-muted)' }}>
+                        Safe to Miss (to keep &ge; 75%)
+                    </div>
                 </div>
             </div>
 

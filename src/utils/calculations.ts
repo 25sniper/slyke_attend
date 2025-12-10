@@ -5,6 +5,8 @@ export interface CalculatedStats {
     totalPresent: number;
     totalAbsent: number;
     percentage: number;
+    currentPercentage: number;
+    canMissHours: number;
     safeToMiss: boolean;
 }
 
@@ -25,15 +27,22 @@ export function calculateStats(subject: Subject, entries: AttendanceEntry[]): Ca
 
     // 2. Current Attendance Percentage (Real-time performance)
     // (Total Present / Total classes occurred)
+    const totalOccurred = totalPresent + totalAbsent;
+    const currentPercentage = totalOccurred > 0
+        ? (totalPresent / totalOccurred) * 100
+        : 100; // Default to 100 if no classes have happened yet.
+
     // Safe to miss buffer (assuming 75% requirement)
-    // const requiredPercent = 75;
-    // const maxAbsentHours = subject.totalHours * (1 - (requiredPercent / 100));
-    // const canMissHours = Math.max(0, maxAbsentHours - totalAbsent);
+    const requiredPercent = 75;
+    const maxAbsentHours = subject.totalHours * (1 - (requiredPercent / 100));
+    const canMissHours = Math.max(0, maxAbsentHours - totalAbsent);
 
     return {
         totalPresent,
         totalAbsent,
         percentage: parseFloat(percentage.toFixed(1)),
-        safeToMiss: percentage >= 75
+        currentPercentage: parseFloat(currentPercentage.toFixed(1)),
+        canMissHours: parseFloat(canMissHours.toFixed(1)),
+        safeToMiss: percentage >= requiredPercent
     };
 }
