@@ -1,0 +1,24 @@
+Initialized native services in: C:\Users\sunil\.gradle\native
+Initialized jansi services in: C:\Users\sunil\.gradle\native
+Received JVM installation metadata from 'C:\Program Files\Microsoft\jdk-17.0.16.8-hotspot': {JAVA_HOME=C:\Program Files\Microsoft\jdk-17.0.16.8-hotspot, JAVA_VERSION=17.0.16, JAVA_VENDOR=Microsoft, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=17.0.16+8-LTS, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=17.0.16+8-LTS, VM_VENDOR=Microsoft, OS_ARCH=amd64}
+Removing 0 daemon stop events from registry
+Previous Daemon (19204) stopped at Wed Dec 10 19:23:36 IST 2025 stop command received
+Starting a Gradle Daemon, 1 stopped Daemon could not be reused, use --status for details
+Starting process 'Gradle build daemon'. Working directory: C:\Users\sunil\.gradle\daemon\8.7 Command: C:\Program Files\Microsoft\jdk-17.0.16.8-hotspot\bin\java.exe --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-opens=java.base/java.nio.charset=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED -Xmx1536m -Dfile.encoding=UTF-8 -Duser.country=US -Duser.language=en -Duser.variant -cp C:\Users\sunil\.gradle\wrapper\dists\gradle-8.7-bin\bhs2wmbdwecv87pi65oeuq5iu\gradle-8.7\lib\gradle-launcher-8.7.jar -javaagent:C:\Users\sunil\.gradle\wrapper\dists\gradle-8.7-bin\bhs2wmbdwecv87pi65oeuq5iu\gradle-8.7\lib\agents\gradle-instrumentation-agent-8.7.jar org.gradle.launcher.daemon.bootstrap.GradleDaemon 8.7
+Successfully started process 'Gradle build daemon'
+An attempt to start the daemon took 3.342 secs.
+The client will now receive all logging from the daemon (pid: 24948). The daemon log file: C:\Users\sunil\.gradle\daemon\8.7\daemon-24948.out.log
+Starting build in new daemon [memory: 1.5 GiB]
+Using 12 worker leases.
+Received JVM installation metadata from 'C:\Program Files\Microsoft\jdk-17.0.16.8-hotspot': {JAVA_HOME=C:\Program Files\Microsoft\jdk-17.0.16.8-hotspot, JAVA_VERSION=17.0.16, JAVA_VENDOR=Microsoft, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=17.0.16+8-LTS, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=17.0.16+8-LTS, VM_VENDOR=Microsoft, OS_ARCH=amd64}
+Watching the file system is configured to be enabled if available
+Now considering [C:\Users\sunil\.gemini\antigravity\scratch\slyke-attend\android] as hierarchies to watch
+File system watching is active
+Starting Build
+Settings evaluated using settings file 'C:\Users\sunil\.gemini\antigravity\scratch\slyke-attend\android\settings.gradle'.
+Projects loaded. Root project using build file 'C:\Users\sunil\.gemini\antigravity\scratch\slyke-attend\android\build.gradle'.
+Included projects: [root project 'android', project ':app', project ':capacitor-android', project ':capacitor-cordova-android-plugins', project ':capacitor-filesystem']
+
+> Configure project :
+Evaluating root project 'android' using build file 'C:\Users\sunil\.gemini\antigravity\scratch\slyke-attend\android\build.gradle'.
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-compiler-embeddable/1.9.0/kotlin-compiler-embeddable-1.9.0.jar to C:\Users\sunil\.gradle\.tmp\gradle_download16859861029784257085bin

@@ -1,0 +1,97 @@
+Initialized native services in: C:\Users\sunil\.gradle\native
+Initialized jansi services in: C:\Users\sunil\.gradle\native
+Received JVM installation metadata from 'C:\Program Files\Microsoft\jdk-17.0.16.8-hotspot': {JAVA_HOME=C:\Program Files\Microsoft\jdk-17.0.16.8-hotspot, JAVA_VERSION=17.0.16, JAVA_VENDOR=Microsoft, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=17.0.16+8-LTS, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=17.0.16+8-LTS, VM_VENDOR=Microsoft, OS_ARCH=amd64}
+The client will now receive all logging from the daemon (pid: 26136). The daemon log file: C:\Users\sunil\.gradle\daemon\8.7\daemon-26136.out.log
+Starting 11th build in daemon [uptime: 1 hrs 18 mins 10.807 secs, performance: 100%, GC rate: 0.00/s, heap usage: 0% of 1.5 GiB]
+Using 12 worker leases.
+Now considering [C:\Users\sunil\.gemini\antigravity\scratch\slyke-attend\android] as hierarchies to watch
+Watching the file system is configured to be enabled if available
+File system watching is active
+Starting Build
+Settings evaluated using settings file 'C:\Users\sunil\.gemini\antigravity\scratch\slyke-attend\android\settings.gradle'.
+Projects loaded. Root project using build file 'C:\Users\sunil\.gemini\antigravity\scratch\slyke-attend\android\build.gradle'.
+Included projects: [root project 'android', project ':app', project ':capacitor-android', project ':capacitor-cordova-android-plugins', project ':capacitor-filesystem']
+
+> Configure project :
+Evaluating root project 'android' using build file 'C:\Users\sunil\.gemini\antigravity\scratch\slyke-attend\android\build.gradle'.
+Caching disabled for Groovy DSL script compilation (cp_proj) because:
+  Build cache is disabled
+Compiling build file 'C:\Users\sunil\.gemini\antigravity\scratch\slyke-attend\android\build.gradle' using SubsetScriptTransformer.
+Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-gradle-plugin/1.9.0/kotlin-gradle-plugin-1.9.0.pom]
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-gradle-plugin/1.9.0/kotlin-gradle-plugin-1.9.0.pom to C:\Users\sunil\.gradle\.tmp\gradle_download17602288427440700915bin
+Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-gradle-plugins-bom/1.9.0/kotlin-gradle-plugins-bom-1.9.0.pom]
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-gradle-plugins-bom/1.9.0/kotlin-gradle-plugins-bom-1.9.0.pom to C:\Users\sunil\.gradle\.tmp\gradle_download13166505239872500752bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-gradle-plugins-bom/1.9.0/kotlin-gradle-plugins-bom-1.9.0.module to C:\Users\sunil\.gradle\.tmp\gradle_download4147693235838437686bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-gradle-plugin/1.9.0/kotlin-gradle-plugin-1.9.0.module to C:\Users\sunil\.gradle\.tmp\gradle_download8186699038236584131bin
+Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-gradle-plugin-model/1.9.0/kotlin-gradle-plugin-model-1.9.0.pom]
+Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-tooling-core/1.9.0/kotlin-tooling-core-1.9.0.pom]
+Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-project-model/1.9.0/kotlin-project-model-1.9.0.pom]
+Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-util-klib/1.9.0/kotlin-util-klib-1.9.0.pom]
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-gradle-plugin-model/1.9.0/kotlin-gradle-plugin-model-1.9.0.pom to C:\Users\sunil\.gradle\.tmp\gradle_download1951863855139003231bin
+Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-build-tools-api/1.9.0/kotlin-build-tools-api-1.9.0.pom]
+Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-klib-commonizer-api/1.9.0/kotlin-klib-commonizer-api-1.9.0.pom]
+Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-gradle-plugin-api/1.9.0/kotlin-gradle-plugin-api-1.9.0.pom]
+Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-compiler-embeddable/1.9.0/kotlin-compiler-embeddable-1.9.0.pom]
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-gradle-plugin-model/1.9.0/kotlin-gradle-plugin-model-1.9.0.module to C:\Users\sunil\.gradle\.tmp\gradle_download7000753990172624778bin
+Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-gradle-plugin-idea/1.9.0/kotlin-gradle-plugin-idea-1.9.0.pom]
+Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-android-extensions/1.9.0/kotlin-android-extensions-1.9.0.pom]
+Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-gradle-plugin-idea-proto/1.9.0/kotlin-gradle-plugin-idea-proto-1.9.0.pom]
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-util-klib/1.9.0/kotlin-util-klib-1.9.0.pom to C:\Users\sunil\.gradle\.tmp\gradle_download3801893709865972975bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-klib-commonizer-api/1.9.0/kotlin-klib-commonizer-api-1.9.0.pom to C:\Users\sunil\.gradle\.tmp\gradle_download878111786699387426bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-tooling-core/1.9.0/kotlin-tooling-core-1.9.0.pom to C:\Users\sunil\.gradle\.tmp\gradle_download4331305404796788841bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-project-model/1.9.0/kotlin-project-model-1.9.0.pom to C:\Users\sunil\.gradle\.tmp\gradle_download14974623547235312318bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-gradle-plugin-api/1.9.0/kotlin-gradle-plugin-api-1.9.0.pom to C:\Users\sunil\.gradle\.tmp\gradle_download12587971168451347264bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-compiler-embeddable/1.9.0/kotlin-compiler-embeddable-1.9.0.pom to C:\Users\sunil\.gradle\.tmp\gradle_download15779654736796331217bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-build-tools-api/1.9.0/kotlin-build-tools-api-1.9.0.pom to C:\Users\sunil\.gradle\.tmp\gradle_download16938000531445809219bin
+Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-compiler-runner/1.9.0/kotlin-compiler-runner-1.9.0.pom]
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-gradle-plugin-api/1.9.0/kotlin-gradle-plugin-api-1.9.0.module to C:\Users\sunil\.gradle\.tmp\gradle_download14105292017861106724bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-android-extensions/1.9.0/kotlin-android-extensions-1.9.0.pom to C:\Users\sunil\.gradle\.tmp\gradle_download14450864416341761520bin
+Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-scripting-compiler-embeddable/1.9.0/kotlin-scripting-compiler-embeddable-1.9.0.pom]
+Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-scripting-compiler-impl-embeddable/1.9.0/kotlin-scripting-compiler-impl-embeddable-1.9.0.pom]
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-gradle-plugin-idea/1.9.0/kotlin-gradle-plugin-idea-1.9.0.pom to C:\Users\sunil\.gradle\.tmp\gradle_download7625895269504403004bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-compiler-runner/1.9.0/kotlin-compiler-runner-1.9.0.pom to C:\Users\sunil\.gradle\.tmp\gradle_download13818786245008163836bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-gradle-plugin-idea-proto/1.9.0/kotlin-gradle-plugin-idea-proto-1.9.0.pom to C:\Users\sunil\.gradle\.tmp\gradle_download17308066736462162899bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-scripting-compiler-impl-embeddable/1.9.0/kotlin-scripting-compiler-impl-embeddable-1.9.0.pom to C:\Users\sunil\.gradle\.tmp\gradle_download7438219457806961423bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-scripting-compiler-embeddable/1.9.0/kotlin-scripting-compiler-embeddable-1.9.0.pom to C:\Users\sunil\.gradle\.tmp\gradle_download4649819628209007611bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-gradle-plugin-idea/1.9.0/kotlin-gradle-plugin-idea-1.9.0.module to C:\Users\sunil\.gradle\.tmp\gradle_download11170144711821351855bin
+Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-native-utils/1.9.0/kotlin-native-utils-1.9.0.pom]
+Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-gradle-plugin-annotations/1.9.0/kotlin-gradle-plugin-annotations-1.9.0.pom]
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-native-utils/1.9.0/kotlin-native-utils-1.9.0.pom to C:\Users\sunil\.gradle\.tmp\gradle_download7356073280164534436bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-gradle-plugin-annotations/1.9.0/kotlin-gradle-plugin-annotations-1.9.0.pom to C:\Users\sunil\.gradle\.tmp\gradle_download13973491204741788844bin
+Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-util-io/1.9.0/kotlin-util-io-1.9.0.pom]
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-util-io/1.9.0/kotlin-util-io-1.9.0.pom to C:\Users\sunil\.gradle\.tmp\gradle_download11526817195901380187bin
+Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-daemon-embeddable/1.9.0/kotlin-daemon-embeddable-1.9.0.pom]
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-daemon-embeddable/1.9.0/kotlin-daemon-embeddable-1.9.0.pom to C:\Users\sunil\.gradle\.tmp\gradle_download16916300258943747951bin
+Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm/1.5.0/kotlinx-coroutines-core-jvm-1.5.0.pom]
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm/1.5.0/kotlinx-coroutines-core-jvm-1.5.0.pom to C:\Users\sunil\.gradle\.tmp\gradle_download18267362767632601195bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm/1.5.0/kotlinx-coroutines-core-jvm-1.5.0.module to C:\Users\sunil\.gradle\.tmp\gradle_download14656882041668978474bin
+Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-daemon-client/1.9.0/kotlin-daemon-client-1.9.0.pom]
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-daemon-client/1.9.0/kotlin-daemon-client-1.9.0.pom to C:\Users\sunil\.gradle\.tmp\gradle_download5969599564735895064bin
+Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-scripting-common/1.9.0/kotlin-scripting-common-1.9.0.pom]
+Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-scripting-jvm/1.9.0/kotlin-scripting-jvm-1.9.0.pom]
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-scripting-common/1.9.0/kotlin-scripting-common-1.9.0.pom to C:\Users\sunil\.gradle\.tmp\gradle_download1220126884097966321bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-scripting-jvm/1.9.0/kotlin-scripting-jvm-1.9.0.pom to C:\Users\sunil\.gradle\.tmp\gradle_download15780446179403723364bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-gradle-plugin-api/1.9.0/kotlin-gradle-plugin-api-1.9.0.jar to C:\Users\sunil\.gradle\.tmp\gradle_download2869995953852483166bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-gradle-plugin-model/1.9.0/kotlin-gradle-plugin-model-1.9.0.jar to C:\Users\sunil\.gradle\.tmp\gradle_download16636950433338155419bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-gradle-plugin-api/1.9.0/kotlin-gradle-plugin-api-1.9.0-gradle81.jar to C:\Users\sunil\.gradle\.tmp\gradle_download4101437850363816365bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-gradle-plugin/1.9.0/kotlin-gradle-plugin-1.9.0-gradle81.jar to C:\Users\sunil\.gradle\.tmp\gradle_download8605262986645811406bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-gradle-plugin-idea/1.9.0/kotlin-gradle-plugin-idea-1.9.0.jar to C:\Users\sunil\.gradle\.tmp\gradle_download7200094610085978029bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-klib-commonizer-api/1.9.0/kotlin-klib-commonizer-api-1.9.0.jar to C:\Users\sunil\.gradle\.tmp\gradle_download8117757574882100148bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-gradle-plugin-idea-proto/1.9.0/kotlin-gradle-plugin-idea-proto-1.9.0.jar to C:\Users\sunil\.gradle\.tmp\gradle_download11101538226942311979bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-project-model/1.9.0/kotlin-project-model-1.9.0.jar to C:\Users\sunil\.gradle\.tmp\gradle_download6178413185646377274bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-tooling-core/1.9.0/kotlin-tooling-core-1.9.0.jar to C:\Users\sunil\.gradle\.tmp\gradle_download1220327838232137535bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-util-klib/1.9.0/kotlin-util-klib-1.9.0.jar to C:\Users\sunil\.gradle\.tmp\gradle_download9430380159201237471bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-native-utils/1.9.0/kotlin-native-utils-1.9.0.jar to C:\Users\sunil\.gradle\.tmp\gradle_download3081961382579946436bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-android-extensions/1.9.0/kotlin-android-extensions-1.9.0.jar to C:\Users\sunil\.gradle\.tmp\gradle_download17776013495482722869bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-build-tools-api/1.9.0/kotlin-build-tools-api-1.9.0.jar to C:\Users\sunil\.gradle\.tmp\gradle_download17190939893551746545bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-compiler-runner/1.9.0/kotlin-compiler-runner-1.9.0.jar to C:\Users\sunil\.gradle\.tmp\gradle_download12066896893707188820bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-compiler-embeddable/1.9.0/kotlin-compiler-embeddable-1.9.0.jar to C:\Users\sunil\.gradle\.tmp\gradle_download16072810930623022787bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-scripting-compiler-embeddable/1.9.0/kotlin-scripting-compiler-embeddable-1.9.0.jar to C:\Users\sunil\.gradle\.tmp\gradle_download1411232159014410637bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-scripting-compiler-impl-embeddable/1.9.0/kotlin-scripting-compiler-impl-embeddable-1.9.0.jar to C:\Users\sunil\.gradle\.tmp\gradle_download934746189069954811bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-gradle-plugin-annotations/1.9.0/kotlin-gradle-plugin-annotations-1.9.0.jar to C:\Users\sunil\.gradle\.tmp\gradle_download7912008415229918696bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-util-io/1.9.0/kotlin-util-io-1.9.0.jar to C:\Users\sunil\.gradle\.tmp\gradle_download11248809496115324000bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-daemon-embeddable/1.9.0/kotlin-daemon-embeddable-1.9.0.jar to C:\Users\sunil\.gradle\.tmp\gradle_download14599475064629291011bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-daemon-client/1.9.0/kotlin-daemon-client-1.9.0.jar to C:\Users\sunil\.gradle\.tmp\gradle_download2474946267230862357bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm/1.5.0/kotlinx-coroutines-core-jvm-1.5.0.jar to C:\Users\sunil\.gradle\.tmp\gradle_download5450653720921497776bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-scripting-jvm/1.9.0/kotlin-scripting-jvm-1.9.0.jar to C:\Users\sunil\.gradle\.tmp\gradle_download16832664753267416220bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-scripting-common/1.9.0/kotlin-scripting-common-1.9.0.jar to C:\Users\sunil\.gradle\.tmp\gradle_download9876594075539184985bin

@@ -1,0 +1,69 @@
+Initialized native services in: C:\Users\sunil\.gradle\native
+Initialized jansi services in: C:\Users\sunil\.gradle\native
+Received JVM installation metadata from 'C:\Program Files\Microsoft\jdk-17.0.16.8-hotspot': {JAVA_HOME=C:\Program Files\Microsoft\jdk-17.0.16.8-hotspot, JAVA_VERSION=17.0.16, JAVA_VENDOR=Microsoft, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=17.0.16+8-LTS, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=17.0.16+8-LTS, VM_VENDOR=Microsoft, OS_ARCH=amd64}
+The client will now receive all logging from the daemon (pid: 7752). The daemon log file: C:\Users\sunil\.gradle\daemon\8.2.1\daemon-7752.out.log
+Starting 3rd build in daemon [uptime: 2 hrs 22 mins 41.589 secs, performance: 99%, GC rate: 0.00/s, heap usage: 0% of 1.5 GiB]
+Using 12 worker leases.
+Now considering [C:\Users\sunil\.gemini\antigravity\scratch\slyke-attend\android] as hierarchies to watch
+Watching the file system is configured to be enabled if available
+File system watching is active
+Starting Build
+Settings evaluated using settings file 'C:\Users\sunil\.gemini\antigravity\scratch\slyke-attend\android\settings.gradle'.
+Projects loaded. Root project using build file 'C:\Users\sunil\.gemini\antigravity\scratch\slyke-attend\android\build.gradle'.
+Included projects: [root project 'android', project ':app', project ':capacitor-android', project ':capacitor-cordova-android-plugins', project ':capacitor-filesystem']
+
+> Configure project :
+Evaluating root project 'android' using build file 'C:\Users\sunil\.gemini\antigravity\scratch\slyke-attend\android\build.gradle'.
+Invalidating in-memory cache of C:\Users\sunil\.gemini\antigravity\scratch\slyke-attend\android\.gradle\buildOutputCleanup\outputFiles.bin
+The configuration :classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+Invalidating in-memory cache of C:\Users\sunil\.gradle\caches\journal-1\file-access.bin
+
+> Configure project :app
+Evaluating project ':app' using build file 'C:\Users\sunil\.gemini\antigravity\scratch\slyke-attend\android\app\build.gradle'.
+Compiling build file 'C:\Users\sunil\.gemini\antigravity\scratch\slyke-attend\android\app\build.gradle' using SubsetScriptTransformer.
+Compiling build file 'C:\Users\sunil\.gemini\antigravity\scratch\slyke-attend\android\app\build.gradle' using BuildScriptTransformer.
+Using default execution profile
+google-services.json not found, google-services plugin not applied. Push Notifications won't work
+WARNING: Using flatDir should be avoided because it doesn't support any meta-data formats.
+
+> Configure project :capacitor-android
+Evaluating project ':capacitor-android' using build file 'C:\Users\sunil\.gemini\antigravity\scratch\slyke-attend\node_modules\@capacitor\android\capacitor\build.gradle'.
+The configuration :capacitor-android:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :capacitor-android:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :capacitor-android:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :capacitor-android:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+Using default execution profile
+
+> Configure project :capacitor-cordova-android-plugins
+Evaluating project ':capacitor-cordova-android-plugins' using build file 'C:\Users\sunil\.gemini\antigravity\scratch\slyke-attend\android\capacitor-cordova-android-plugins\build.gradle'.
+The configuration :capacitor-cordova-android-plugins:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :capacitor-cordova-android-plugins:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :capacitor-cordova-android-plugins:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :capacitor-cordova-android-plugins:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+Using default execution profile
+WARNING: Using flatDir should be avoided because it doesn't support any meta-data formats.
+
+> Configure project :capacitor-filesystem
+Evaluating project ':capacitor-filesystem' using build file 'C:\Users\sunil\.gemini\antigravity\scratch\slyke-attend\node_modules\@capacitor\filesystem\android\build.gradle'.
+The configuration :capacitor-filesystem:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :capacitor-filesystem:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :capacitor-filesystem:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :capacitor-filesystem:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+A problem occurred configuring project ':capacitor-filesystem'.
+> java.util.concurrent.ExecutionException: org.gradle.api.GradleException: Failed to create Jar file C:\Users\sunil\.gradle\caches\jars-9\18366b31678c0171857be093a3b8ec22\bcprov-jdk18on-1.79.jar.
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 6s
+Watched directory hierarchies: []
