@@ -45,6 +45,15 @@ export const addSubject = async (subject: Subject) => {
 
 export const updateSubject = addSubject;
 
+export const updateSubjectOrder = async (subjects: Subject[]) => {
+    const db = await initDB();
+    const tx = db.transaction('subjects', 'readwrite');
+    for (const s of subjects) {
+        await tx.store.put(s);
+    }
+    await tx.done;
+};
+
 
 
 export const getAllSubjects = async () => {

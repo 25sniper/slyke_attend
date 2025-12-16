@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { Trash2, PlusCircle, ArrowLeft, Edit } from 'lucide-react';
+import { Trash2, PlusCircle, Edit } from 'lucide-react';
 import { format } from 'date-fns';
 import { getSubject, getEntriesBySubject, deleteSubject, deleteEntry } from '../db/db';
 import type { Subject, AttendanceEntry } from '../db/types';
@@ -83,7 +83,6 @@ export default function SubjectDetail() {
     return (
         <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--spacing-sm)', marginBottom: 'var(--spacing-md)' }}>
-                <Link to="/" className="btn-icon" style={{ padding: '4px' }}><ArrowLeft size={24} /></Link>
                 <div style={{ flex: 1 }}>
                     <h2 style={{ flex: 1 }}>{subject.name}</h2>
                 </div>

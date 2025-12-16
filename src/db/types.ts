@@ -5,6 +5,7 @@ export interface Subject {
   weeklyHours: number;
   totalHours: number; // derived: weeklyHours * 15
   created: number;
+  order?: number; // for custom sorting
 }
 
 export interface AttendanceEntry {

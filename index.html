@@ -1,13 +1,107 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>slyke-attend</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>slyke-attend</title>
+  <style>
+    /* Global styles matching index.css for seamless transition */
+    :root {
+      /* Light Mode Defaults */
+      --color-bg: #f8fafc;
+      --color-surface: #ffffff;
+      --color-primary: #2563EB;
+      --color-skeleton-base: #e2e8f0;
+      --color-skeleton-highlight: #f1f5f9;
+      --color-shadow: rgb(0 0 0 / 0.1);
+      --color-border: #e2e8f0;
+
+      --radius-xl: 16px;
+      --spacing-md: 16px;
+      --spacing-lg: 20px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        /* Dark Mode Defaults matching index.css */
+        --color-bg: #0F172A;
+        --color-surface: #1E293B;
+        --color-primary: #3B82F6;
+        --color-skeleton-base: #334155;
+        --color-skeleton-highlight: #475569;
+        --color-shadow: rgb(0 0 0 / 0.3);
+        --color-border: #334155;
+      }
+    }
+
+    body {
+      background-color: var(--color-bg);
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+    }
+
+    /* Skeleton Styles */
+    .skeleton-header {
+      padding: var(--spacing-lg);
+      padding-top: 60px;
+      /* Status bar spacing */
+    }
+
+    .skeleton-title {
+      height: 32px;
+      width: 150px;
+      background: var(--color-skeleton-base);
+      border-radius: 8px;
+    }
+
+    .skeleton-card {
+      background: var(--color-surface);
+      border-radius: var(--radius-xl);
+      padding: var(--spacing-lg);
+      margin: 0 var(--spacing-lg) var(--spacing-md);
+      height: 120px;
+      box-shadow: 0 1px 3px 0 var(--color-shadow);
+      border: 1px solid var(--color-border);
+    }
+
+    .skeleton-pulse {
+      animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: .7;
+      }
+
+      /* Subtle pulse for dark mode */
+    }
+
+    .skeleton-fab {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 56px;
+      height: 56px;
+      border-radius: 28px;
+      background: var(--color-primary);
+      box-shadow: 0 4px 6px -1px var(--color-shadow);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
 </html>

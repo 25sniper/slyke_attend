@@ -51,6 +51,12 @@ export default function Settings() {
                 </button>
             </div>
 
+            {/* Footer with Punchline */}
+            <div className="card settings-footer">
+                <p>LINUS build panna Bug aagadhu</p>
+                <p>Bug aana mattum sollu</p>
+            </div>
+
             <ConfirmationModal
                 isOpen={resetModal}
                 onClose={() => setResetModal(false)}
